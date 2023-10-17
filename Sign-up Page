@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.outer-box{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top right, rgb(240, 148, 49),rgb(121, 33, 199));
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.inner-box{
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 20%;
+    border: 2px solid rgb(160, 157, 157);
+    border-radius: 10px;
+    padding: 10px 40px;
+    /* background-color: #ffffff09; */
+    background: linear-gradient(to top left,#ffffffff,#ffffff55);
+    backdrop-filter: blur(5px);
+    box-shadow: 10px 10px 10px;
+    z-index: 2;
+}
+h1{
+    font-size:2.5rem;
+    color: rgb(47, 45, 45);
+}
+header>p{
+    font-size:small;
+    color: #8b8181;
+} 
+.signup-body{
+    margin:20px auto;
+}
+.signup-body p{
+     margin: 10px auto;
+}
+.signup-body p label{
+    display: block;
+    font-weight:bold;
+}
+.signup-body p input{
+    width: 100%;
+    padding: 10px ;
+    margin: 2px;
+    border: 2px solid lightslategray;
+    border-radius: 5px;
+    font-size: medium;
+}
+#submit{
+    background-color: #3498db;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: #13476a;
+}
+footer p{
+   text-align: center;
+   color: #555;
+}
+footer p a{
+    color: #3498db;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top right ,rgba(255, 255, 255, 0.247),rgba(208, 255, 1, 0.792));
+    position:absolute;
+}
+.c1{
+    top: 100px ;
+    left: 30px;
+}
+.c2{
+    bottom: 110px;
+    right:50px;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing UP page</title>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="inner-box">
+            <header>
+                <h1>Sign UP</h1>
+                <p>this would take 10 seconds only</p>
+            </header>
+            <main class="signup-body">
+                <form action="#">
+                    <p>
+                        <label for="name">Full Name</label>
+                        <input id="name" type="name" placeholder="Ayush Mishra">
+                    </p>
+                    <p>
+                        <label for="email">Eamil</label>
+                        <input id="email" type="email" placeholder="ayushmismishra0@gmail.com">
+                    </p>
+                    <p>
+                        <label for="password">New Password</label>
+                        <input id="password" type="password" required>
+                    </p>
+                    <p>
+                        <label for="copassword">Confirm Password</label>
+                        <input id="copassword" type="password" required>
+                    </p>
+                    <p>
+                        <input id="submit" type="submit" value="create your account">
+                    </p>
+                </form>
+            </main>
+            <footer>
+                <p>Already have an account?<a href="#">Login</a></p>
+            </footer>
+        </div>
+         <div class="circle c1"></div>
+         <div class="circle c2"></div>
+    </div>
+</body>
+</html>
